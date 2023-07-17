@@ -4,7 +4,7 @@ services:
     build:
       context: ./inventory-service
     ports:
-      - "5002:5002"
+      - "5003:5003"
 
   shipping-service:
     build:
@@ -16,10 +16,10 @@ services:
     build:
       context: ./users-service
     ports:
-      - "5008:5008"
+      - "5002:5002"
 
   billing-service:
     build:
       context: ./billing-service
     ports:
-      - "5000:5000"
+      - "5007:5007"
